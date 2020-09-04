@@ -54,3 +54,15 @@ ggplot(juntos)+ #Informando os dados a serem plotados
                          width = unit(1.8,'cm'), #Largura do símbolo
                          height = unit(1.8,'cm'))+#Altura do símbolo
   labs(title = "IDH Médio Para o Estado de Minas Gerais") #Definindo o título do mapa
+
+
+
+#####################################
+##        Salvando o mapa          ##
+#####################################
+
+ggsave(filename = "mapa_mg_idhm.png",
+       height = 9, #Altura da figura
+       width = 12, #Largura da figura
+       scale =1.2, #Escala da figura
+       units = 'cm') #Unidade das dimensões da figura
